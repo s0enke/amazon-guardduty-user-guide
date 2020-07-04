@@ -22,6 +22,7 @@ Use the following procedures to register a GuardDuty delegated administrator for
 When delegating a GuardDuty master you must have permissions to the following actions:
 + organizations:EnableAWSServiceAccess
 + organizations:ListAWSServiceAccessForOrganization
++ organizations:ListDelegatedAdministrators
 + organizations:RegisterDelegatedAdministrator
 + organizations:DescribeOrganization
 
@@ -34,6 +35,7 @@ You can add the following statement to the end of an existing GuardDuty policy t
     "Action": [
         "organizations:EnableAWSServiceAccess",
         "organizations:ListAWSServiceAccessForOrganization",
+	"organizations:ListDelegatedAdministrators",
         "organizations:RegisterDelegatedAdministrator",
         "organizations:DescribeOrganization"
     ],
